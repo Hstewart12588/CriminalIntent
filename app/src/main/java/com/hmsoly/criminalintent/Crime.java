@@ -26,7 +26,7 @@ public class Crime {
         this.mDate = mDate;
     }
 
-    public Boolean getSolved() {
+    public Boolean isSolved() {
         return mSolved;
     }
 
