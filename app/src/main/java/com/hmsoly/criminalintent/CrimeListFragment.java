@@ -24,6 +24,7 @@ public class CrimeListFragment extends ListFragment {
     private ArrayList<Crime> mCrimes;
     private static final String TAG = "CrimeListFragment";
 
+
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -44,7 +45,10 @@ public class CrimeListFragment extends ListFragment {
     public void onListItemClick(ListView l,View v,int position,long id){
         Crime c = ((CrimeAdapter)getListAdapter()).getItem(position);
         //start crime activity
-        Intent i = new Intent(getActivity(), CrimeActivity.class);
+        //Intent i = new Intent(getActivity(), CrimeActivity.class); **old**
+
+        //start CrimePagerActivity with this crime
+        Intent i = new Intent(getActivity(), CrimePagerActivity.class);
         i.putExtra(CrimeFragment.EXTRA_CRIME_ID, c.getId());
         startActivity(i);
     }

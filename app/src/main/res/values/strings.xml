@@ -6,4 +6,9 @@
     <string name="crime_details_label">Details</string>
     <string name="crime_solved_label">Solved?</string>
     <string name="crimes_title">Crimes</string>
+    <string name="date_picker_title">Date of Crime:</string>
+    <string name="time_picker_title">Time of Crime:</string>
+    <string name="choice_picker_message">What would you like to edit?</string>
+    <string name="choice_picked_date">Date</string>
+    <string name="choice_picked_time">Time</string>
 </resources>
